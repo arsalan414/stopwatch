@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class='time'>
+    <div>
+        <h1 id="min">00</h1>
+        <h1 id="sec">00 </h1><span>.</span>
+        <h2 id="milsec">00</h2>
+    </div>
+    <div>
+        <button class="button1" onclick="start() ,this.disabled=true;document.getElementById('pause').disabled=false; this.disabled=true;document.getElementById('reset').disabled=false;"
+        type="submit"
+        name="start"
+        id="start"" >start</button>
+        <button class="button2" onclick="stop() ,this.disabled=true;document.getElementById('start').disabled=false;"
+        type="submit"
+        name="pause"
+        id="pause">pause</button>
+        <button class="button3" onclick="reset()  ,this.disabled=true;document.getElementById('start').disabled=false;"
+        type="submit"
+        name="reset"
+        id="reset">reset</button>
+    </div>
+</body>
+<script src="app.js"></script>
+
+<html>
